@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import DisplayCard from "./DisplayCard";
-import "./FaultHistory.css";
+// import "./FaultHistory.css";
 
 const FaultHistory = () => {
   const [data, setData] = useState([]);
-  const [vehicleid, setVehicleid] = useState("hero");
+  const [vehicleid] = useState("hero");
   useEffect(() => {
-    fetchHistory(); 
-  }, []); 
+    fetchHistory();
+  }, []);
 
   async function fetchHistory() {
     axios
       .get("http://10.29.8.31:5000/fault-history/get", {
-      // .get("http://localhost:5000/fault-history/get", {
+        // .get("http://localhost:5000/fault-history/get", {
         params: {
           vehicleid: vehicleid,
         },
@@ -27,18 +27,24 @@ const FaultHistory = () => {
       });
   }
 
-
-
   return (
-    <div className="Fault-history">
-      <p className="fault-history-text">Fault History</p>
-      {data.map((entry) => (
-        <DisplayCard
-          key={entry.fault_history_id}
-          description={entry.description}
-          timestamp={entry.timestamp}
-        />
-      ))}
+    <div>
+      <p style={{ color: "black", fontSize: "2.5vh", textAlign: "center", marginBottom:'0.5rem' }}>
+        Fault History
+      </p>
+
+      <div
+        className="overflow-y-scroll"
+        style={{ height: "520px", borderRadius: "1rem", scrollbarWidth: "none" }}
+      >
+        {data.map((entry) => (
+          <DisplayCard
+            key={entry.fault_history_id}
+            description={entry.description}
+            timestamp={entry.timestamp}
+          />
+        ))}
+      </div>
     </div>
   );
 };

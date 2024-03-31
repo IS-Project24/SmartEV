@@ -1,15 +1,10 @@
 import React from "react";
 import data from "./weather.json"
 import {
-    AreaChart,
-    LineChart,
     BarChart,
-    Area,
-    Line,
     Bar,
     XAxis,
     YAxis,
-    CartesianGrid,
     Tooltip,
     Legend,
     ResponsiveContainer

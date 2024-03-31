@@ -28,10 +28,15 @@ const Box3 = () => {
           <BatteryComponent />
         </div>
       </div>
+      <div className="box3-card-1 ev1">
+        <div className="box3-box">
+          <EVHealth healthvalue={80} />
+        </div>
+      </div>
       <div className="box3-card-1">
         <Temp />
       </div>
-      <div className="box3-card-1">
+      <div className="box3-card-1 ev2">
         <div className="box3-box">
           <EVHealth healthvalue={80} />
         </div>

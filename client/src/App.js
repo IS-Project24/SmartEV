@@ -14,7 +14,7 @@ import Readytrack from "./components/Readytrack/Readytrack";
 import Adaptiveplatform from "./components/Adaptiveplatform/Adaptiveplatform";
 import Platformadvantage from "./components/Platformadvantage/Platformadvantage";
 import Contact from "./components/Contact/Contact";
-import PrivateRoutes from "./utils/PrivateRoutes";
+// import PrivateRoutes from "./utils/PrivateRoutes";
 import Career from "./components/Careers/Career";
 import Faqs from "./components/Faqs/Faqs";
 import Notfound from "./components/NotFound/Notfound";
@@ -112,10 +112,10 @@ function App() {
               </>
             }
           />
-          <Route element={<PrivateRoutes isLoggedIn={isLoggedIn} />}>
+          {/* <Route element={<PrivateRoutes isLoggedIn={isLoggedIn} />}> */}
              <Route element={<UserProfile2 />} path="/Owner" exact />
               <Route element={<MfPage />} path="/Manufacturer" exact />
-          </Route>
+          {/* </Route> */}
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/career" element={<Career />} />
           <Route exact path="/faqs" element={<Faqs />} />

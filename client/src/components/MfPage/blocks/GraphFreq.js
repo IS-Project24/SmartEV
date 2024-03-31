@@ -1,15 +1,12 @@
 import { React, useState, useEffect } from "react";
 import {
     AreaChart,
-    LineChart,
-    Line,
+    Area,
     XAxis,
     YAxis,
-    CartesianGrid,
     Tooltip,
     Legend,
     ResponsiveContainer,
-    Area,
   } from "recharts";
 
 const GraphFreq = () => {

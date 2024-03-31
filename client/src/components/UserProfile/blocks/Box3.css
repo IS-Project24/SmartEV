@@ -27,6 +27,9 @@
     grid-auto-rows: minmax(auto, 1fr);
 }
 
+.ev1{
+    display: none;
+}
 .box3-card-1 {
     background-color: #f5f5f7;
     border-radius: 16px;
@@ -55,8 +58,22 @@
 }
 
 @media screen and (max-width: 768px) {
-    .user-profile-box3{
+    .box3{
         grid-template-columns: 1fr;  /* One column for 1x4 layout */
-    grid-template-rows: 2fr 1fr;
+    }
+    .box3-card-1 {
+        padding: 0;
+    }
+    .ev1{
+        display: block;
+    }
+    .ev2{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1440px) and (max-width: 1919px) {
+    .box3-card-1 {
+        padding: 0;
     }
 }
