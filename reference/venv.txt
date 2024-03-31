@@ -1,0 +1,83 @@
+ scp -r build/* cv@10.29.8.31:~/myPmsmApp/build/
+
+qts.iitkgp.ac.in/last/gail/current/5
+----------------
+--legacy-peer-deps
+---------------------------
+python -m venv myenv
+
+myenv\Scripts\activate
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+CREATE USER 'root'@'%' IDENTIFIED BY 'PASSWORD';
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+mysql> FLUSH PRIVILEGES;
+
+pmsmos 1234*Qwerty
+
+-------------------------------------------------------
+cd myPmsmApp
+requirements.txt
+sudo apt install nginx
+sudo vi /etc/nginx/sites-available
+sudo vi /etc/nginx/sites-available/myPmsmApp
+server {
+    listen 80;
+    server_name 10.29.8.31;
+
+    root /path/to/your/react/app/build;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
+sudo ln -s /etc/nginx/sites-available/myPmsmApp /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl restart nginx
+sudo ufw allow 'Nginx HTTP'
+
+sudo journalctl -u nginx -f
+
+------------------
+sudo mysql -u root -p
+show databases;
+use mysql;
+update user set plugin='mysql_native_password' where user='root';
+flush privileges;
+exit;
+mysql -u root -p
+ALTER USER 'root'@'localhost' IDENTIFIED BY '123456789';
+---------------------
+cd ~/myPmsmAppBackend/Backend
+source venv/bin/activate
+
+sudo nano /etc/systemd/system/flask_backend.service
+
+[Unit]
+Description=Flask Backend
+After=network.target
+
+[Service]
+User=cv
+Group=cv
+WorkingDirectory=/home/cv/myPmsmAppBackend/Backend
+Environment="PATH=/home/cv/myPmsmAppBackend/Backend/venv/bin"
+ExecStart=/home/cv/myPmsmAppBackend/Backend/venv/bin/python3 /home/cv/myPmsmAppBackend/Backend/run.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+sudo systemctl enable flask_backend
+sudo systemctl start flask_backend
+
+sudo systemctl status flask_backend
+sudo systemctl stop flask_backend
+------
+tmux new -s mysession
+tmux attach -t mysession
+

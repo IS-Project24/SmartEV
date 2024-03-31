@@ -1,0 +1,60 @@
+# main website
+navbar -
+* home - some video of iot applications in ev industry - ev-olution ka first page
+* datoms ka second page - transforming the ev industries with iot and ai
+* what we provide - datoms ka 5th page ("endless possibilities with datoms cloud" section)
+* our clients - (what is the difference between what we provide each of them)
+* team
+* footer
+* login/signup
+
+
+
+# after user login
+left pe car model photo
+right top section
+* battery left (bar with percentage)
+* ev health (from ml model) (circle with percentage)
+	* click card - book service
+right bottom
+* nearest charging station
+* stats
+
+
+# stats section
+* last 30 days charging stats
+* last 30 days distance traveled stats
+* service history
+
+
+
+# for service center client 
+
+client wali saari cheezein rhengi
+uske baad
+
+# stats section
+* real time current, voltage, temperature from ev motor
+* past fault history: chart (stock price history type graph)
+
+
+
+motor 
+-motor id
+-motor specifications
+
+
+
+
+30-01-2024
+# login + signup
+# user page
+
+
+
+1-2-2024
+#home page
+#login page - signup page for user
+#dashboard ui
+#temp api
+#iot device api- current
