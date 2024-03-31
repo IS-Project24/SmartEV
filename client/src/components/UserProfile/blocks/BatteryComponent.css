@@ -78,10 +78,14 @@ body {
 
 .battery__text {
     margin-bottom: .5rem;
+    transform: translateX(-5px);
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .battery__percentage {
     font-size: var(--biggest-font-size);
+    transform: translateX(-10px);
 }
 
 .battery__status {
@@ -91,6 +95,7 @@ body {
     align-items: center;
     column-gap: .5rem;
     font-size: var(--smaller-font-size);
+    transform: translateX(-10px);
 }
 
 .battery__status i {
