@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+.career-page {
+    /* position: fixed; */
+    /* background-color: #E8D8C4; */
+    border-top: 10px solid #000000;
+    /* background-image: linear-gradient(to right top, #ddbe9b, #e3c9a8, #e9d4b5, #efdfc2, #f6ead0, #f5e6ca, #f4e2c3, #f3debd, #eccaa3, #e7b58b, #e2a076, #dd8965); */
+    background-image: linear-gradient(to right bottom, #000000, #0b0407, #110910, #140d17, #15121e, #131623, #0f1a28, #081e2c, #01222e, #00262e, #002a2d, #002d2a) !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.career-heading {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0px 5vh;
+    padding-top: 5vh;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    /* text-shadow: 2px 2px 5px #fff; */
+}
+
+.career-content {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin: 0px 20vh;
+    padding-top: 2vh;
+    /* padding-bottom: 5vh ; */
+    /* font-size: 10rem; */
+    font-weight: 500;
+    color: #999999;
+    /* text-shadow: 2px 2px 5px #fff; */
+}
+

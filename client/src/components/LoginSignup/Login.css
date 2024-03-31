@@ -1,0 +1,95 @@
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  /* font-size: 18px; */
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 3;
+  overflow-y: hidden;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+.modal-content {
+  position: absolute;
+
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  line-height: 1.4;
+  background: #0f071e;
+  color: white;
+  /* padding: 14px 28px; */
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+  z-index: 4;
+  max-height: 90vh;
+  overflow: scroll;
+
+}
+.modal-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Safari */
+.modal-content {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+}
+
+
+#login2-chk {
+  display: none;
+}
+
+.modal-closer {
+  display: block;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.modal-closer p {
+  display: block;
+}
+
+.sign-in-button {
+  background-color: rgb(0, 159, 159);
+}
+
+.go-to-login-state:hover
+{
+  cursor: pointer;
+}
+
+.model-content-form
+{
+background-image: linear-gradient(to right top, #003a37, #003638, #003238, #002d38, #002936, #002837, #002738, #002639, #00283e, #002a43, #002c48, #002e4d);}

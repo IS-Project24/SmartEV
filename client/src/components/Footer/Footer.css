@@ -1,0 +1,23 @@
+
+.material-symbols-outlined
+{
+  margin: 0px 10px;
+}
+
+.footer-main
+{
+  background-image: linear-gradient(to right bottom, #180c1a, #140812, #0a0307, #050203, #000000) !important;
+}
+
+.footer-main-heading
+{
+  color: white;
+
+}
+.footer-main-heading-1
+{
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+
+}

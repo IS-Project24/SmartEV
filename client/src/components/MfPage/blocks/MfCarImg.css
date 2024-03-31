@@ -1,0 +1,34 @@
+.mf-car-image-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: black; */
+}
+
+.mf-car-image-box img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.mf-car-image-box-overlay-text{
+    /* font-family: 'Oswald', sans-serif; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    color: #000;
+    /* font-weight: bold; */
+    font-size: 2vw;
+    text-align: center;
+    width: 100%;
+}
+
+.mf-car-image
+{
+    margin-bottom: 20px;
+    opacity: 0;
+}

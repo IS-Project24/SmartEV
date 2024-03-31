@@ -1,0 +1,55 @@
+.evhealth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ev_card{
+    /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.ev_card .ev_rating{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background: #ff0; */
+}
+
+.ev_card .ev_rating .ev_block{
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: white;
+    left: 50%;
+    transform-origin: 50% 100px;
+    animation: animate 2s linear forwards;
+}
+
+@keyframes animate{
+   to{
+    opacity: 1;
+   }
+}
+
+
+.ev_card .ev_rating h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.ev_card .ev_rating h2 span{
+    font-size: 2rem;
+    font-weight: 700;
+}

@@ -1,0 +1,1 @@
+scp -r * cv@10.29.8.31:~/myPmsmAppBackend/Backend/

@@ -1,0 +1,128 @@
+/* CSS for larger screens */
+/* CSS for larger screens */
+
+.navbar1 {
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: 'Rubik',sans-serif;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.solid {
+  /* background-color: #0f071e; */
+  background-image: linear-gradient(to right bottom, #180c1a, #140812, #0a0307, #050203, #000000) !important;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.menu-toggle {
+  display: none; /* Hide toggle button on larger screens */
+}
+
+.sidebar {
+  display: none; /* Hide sidebar on larger screens */
+}
+
+.right-section {
+  display: flex; /* Display right section for larger screens */
+}
+
+.right-section ul {
+  list-style: none;
+  display: flex;
+}
+
+.right-section li {
+  margin-right: 15px;
+}
+
+.right-section a,
+.right-section button {
+  text-decoration: none;
+  color: white;
+  /* font-weight: bold; */
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.right-section a:hover,
+.right-section button:hover {
+  color: #ffd700;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show toggle button on smaller screens */
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px;
+  }
+
+  .navbar1 {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .right-section {
+    display: none; /* Hide right section on smaller screens */
+  }
+
+  
+
+  .sidebar.open {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #0f071e;
+    transition: left 0.3s ease;
+    z-index: 1;
+    
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar li {
+    margin: 15px 0;
+  }
+
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .sidebar a:hover {
+    color: #ffd700;
+  }
+}

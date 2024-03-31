@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
+
+.mf-page {
+    padding-inline: 3rem;
+    padding-block: 5rem;
+    margin: 0 5vw;
+    /* width: 100%; */
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    /* grid-auto-rows: minmax(auto, 1fr); */
+    font-family: 'Rubik', sans-serif;
+}
+
+.mf-page-card-1 {
+    background-image: linear-gradient(to right top, #e3e1d9, #e6e4db, #e8e6dd, #ebe9e0, #eeebe2, #ebebe2, #e8ece3, #e5ece4, #dde9e5, #d9e4e6, #d8dfe4, #d8dae0);
+    border-radius: 16px;
+    padding: 24px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.box2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 .mf-cr-graph{
+    width: 100%;
+    height: 100%;
+}
+
+.box2 .mf-fr-graph{
+    width: 100%;
+    height: 100%;
+}
+
+.mf-page-box-4{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.mf-page-card-2{
+    gap: 1rem;
+}
+
+.mf-page-card-2-text{
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+}
