@@ -210,15 +210,9 @@ function Navbar(props) {
         </div>
       )} */}
 
-      <div
-        class="navbar1 ${scrolling ? 'solid' : 'transparent'}"
-        style={{ scrollBehavior: "smooth" }}
-      >
+      <div class={`navbar1 ${scrolling ? "solid" : "transparent"}`}>
         <div class="">
-          <div
-            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-0"
-            style={{ scrollBehavior: "smooth" }}
-          >
+          <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-0">
             <Link
               to=""
               class="cursor-pointer flex items-center space-x-3 rtl:space-x-reverse"
@@ -263,23 +257,16 @@ function Navbar(props) {
                 />
               </svg>
             </button>
-            <div
-              class="hidden w-full md:block md:w-auto"
-              id="navbar-default"
-              style={{ scrollBehavior: "smooth" }}
-            >
-              <ul
-                class="cursor-pointer font-medium flex flex-col p-4 md:p-0 mt-4  rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  "
-                style={{ scrollBehavior: "smooth" }}
-              >
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+              <ul class="cursor-pointer font-medium flex flex-col p-4 md:p-0 mt-4  rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  ">
                 {(!props.isLoggedIn || location.pathname === "/") && (
                   <>
                     <li>
                       <Link
                         to="home"
-                        class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                        class="block py-2 px-3 text-white rounded md:hover:text-yellow-700 md:bg-transparent md:p-0 dark:text-white"
                         aria-current="page"
-                        style={{ scrollBehavior: "smooth" }}
+                        smooth={true}
                       >
                         Home
                       </Link>
@@ -288,7 +275,7 @@ function Navbar(props) {
                       <Link
                         to="about"
                         class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                        style={{ scrollBehavior: "smooth" }}
+                        smooth={true}
                       >
                         About
                       </Link>
@@ -297,7 +284,7 @@ function Navbar(props) {
                       <Link
                         to="initiatives"
                         class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                        style={{ scrollBehavior: "smooth" }}
+                        smooth={true}
                       >
                         Initiatives
                       </Link>
@@ -306,6 +293,7 @@ function Navbar(props) {
                       <Link
                         to="advantages"
                         class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                        smooth={true}
                       >
                         Advantages
                       </Link>
@@ -313,6 +301,7 @@ function Navbar(props) {
                     <li>
                       <Link
                         to="track"
+                        smooth={true}
                         class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                       >
                         Track
