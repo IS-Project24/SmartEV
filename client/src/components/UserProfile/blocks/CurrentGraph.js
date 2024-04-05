@@ -27,7 +27,7 @@ const CurrentGraph = () => {
         const jsonData = await response.json();
         // console.log('response:', jsonData);
         setData(jsonData); // Update state with fetched data
-        console.log("Fetched data:", jsonData);
+        // console.log("Fetched data:", jsonData);
       } catch (error) {
         console.error("Error fetching data:", error);
         // console.log('couldnt fetch data:');

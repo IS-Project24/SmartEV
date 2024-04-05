@@ -45,7 +45,7 @@ function Navbar(props) {
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
-    console.log(sidebarOpen);
+    // console.log(sidebarOpen);
   };
 
   const handleProfileClick = () => {
