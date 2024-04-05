@@ -1,5 +1,114 @@
-.fault-history-text{
-    color: black;
-    font-size: 2rem;
+.add-display-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
+
+.add-icon
+{
+    transition: 1s;
+}
+.add-display-card:hover .add-icon {
+    transform: scale(1.2);
+}
+.add-icon:hover {
+    transition: 0s;
+    color: rgb(0, 255, 115);
+}
+
+
+/* modal  */
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    /* font-size: 18px; */
+}
+
+.modal,
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 3;
+    overflow-y: hidden;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+.modal-content {
+    position: absolute;
+
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    line-height: 1.4;
+    color: rgb(0, 0, 0);
+    /* padding: 14px 28px; */
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+    z-index: 4;
+    max-height: 90vh;
+    overflow: scroll;
+
+}
+
+.modal-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Safari */
+.modal-content {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+
+#login2-chk {
+    display: none;
+}
+
+.modal-closer {
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.modal-closer p {
+    display: block;
+}
+
+.sign-in-button {
+    background-color: rgb(0, 159, 159);
+}
+
+.go-to-login-state:hover {
+    cursor: pointer;
+}
+
+.model-content-form1 {background-image: linear-gradient(to right top, #e3e1d9, #e6e4db, #e8e6dd, #ebe9e0, #eeebe2, #ebebe2, #e8ece3, #e5ece4, #dde9e5, #d9e4e6, #d8dfe4, #d8dae0);}

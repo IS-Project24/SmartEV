@@ -40,7 +40,7 @@ function ServiceHistory() {
         {data.map((entry) => (
           <DisplayCard
             key={entry.service_history_id}
-            description={entry.description}
+            name={entry.description}
             timestamp={entry.timestamp}
           />
         ))}

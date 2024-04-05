@@ -8,7 +8,7 @@ import FaultHistory from "./blocks/FaultHistory";
 // import MfBox4 from "./blocks/MfBox4";
 import ServiceHistory from "./blocks/ServiceHistory";
 
-const MfPage = () => {
+const MfPage = (props) => {
   const [zoom, setZoom] = useState(1);
 
   useEffect(() => {
@@ -35,7 +35,8 @@ const MfPage = () => {
 
 
   return (
-    <div className="mf-page" style={{ transform: `scale(${zoom})` }}>
+    // <div className="mf-page" style={{ transform: `scale(${zoom})` }}>
+    <div className="mf-page">
       <div className="mf-page-card-1">
         <MfCarImg />
       </div>
@@ -55,10 +56,13 @@ const MfPage = () => {
       <div className="mf-page-card-1">
         <div className="mf-page-box-4">
           <div className="mf-page-card-2">
-            <FaultHistory />
+            <FaultHistory
+              notifyerror={props.notifyerror}
+              notifysuccess={props.notifysuccess}
+            />
           </div>
           <div className="mf-page-card-2">
-            <ServiceHistory/>
+            <ServiceHistory />
           </div>
         </div>
       </div>
