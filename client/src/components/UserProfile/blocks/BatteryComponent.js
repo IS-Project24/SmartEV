@@ -16,6 +16,7 @@ const BatteryComponent = () => {
     const initBattery = async () => {
       try {
         const batt = await navigator.getBattery();
+        console.log(batt);
         setBattery(batt);
         setCharging(batt.charging);
         setLevel(Math.floor(batt.level * 100));
@@ -49,7 +50,7 @@ const BatteryComponent = () => {
   };
 
   const updateBatteryStatus = (charge, isCharging) => {
-    charge = 0.85;
+    // charge = 0.30;
     isCharging = true;
     const level = Math.floor(charge * 100);
     setLevel(level);

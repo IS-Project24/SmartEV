@@ -3,7 +3,37 @@ import axios from "axios";
 import DisplayCard from "./DisplayCard";
 import "./FaultHistory.css";
 
+
+import { ToastContainer, toast } from "react-toastify";
+
 const FaultHistory = (props) => {
+  // toast
+  const notifysuccess = (c) => {
+    toast.success(c, {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      // transition: Bounce,
+    });
+  };
+  const notifyerror = (c) => {
+    toast.error(c, {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      // transition: Bounce,
+    });
+  };
   const [fault_type_id, setFaulttype] = useState("1");
   const [description, setDiscription] = useState("");
 
@@ -44,7 +74,7 @@ const FaultHistory = (props) => {
         })
         .then((res) => {
           if (res.status === 200) {
-            props.notifysuccess("Fault registered successfully");
+            notifysuccess("Fault registered successfully");
             fetchHistory();
             setModal(false);
           }

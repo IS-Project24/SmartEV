@@ -27,8 +27,7 @@ def update_vehicle_data():
 # Get battery percentage and health status of a vehicle
 @app.route('/vehicles/stats', methods=['GET'])
 def get_vehicle_data():
-    data = request.json
-    vehicle_id = data.get('vehicle_id')
+    vehicle_id = request.args.get('vehicleid')
     vehicle = Vehicle.query.filter_by(vehicle_id=vehicle_id).first()
     if not vehicle:
         return jsonify({'message': 'Vehicle not found'}), 404
