@@ -191,7 +191,6 @@ function Navbar(props) {
                         localStorage.removeItem("isLoggedIn");
                         props.setLogstat();
                         props.notifysuccess("Successfully Logged out");
-                        console.log(location.pathname);
                       }}
                     >
                       Logout

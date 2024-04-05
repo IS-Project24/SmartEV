@@ -16,7 +16,7 @@ const BatteryComponent = () => {
     const initBattery = async () => {
       try {
         const batt = await navigator.getBattery();
-        console.log(batt);
+        // console.log(batt);
         setBattery(batt);
         setCharging(batt.charging);
         setLevel(Math.floor(batt.level * 100));

@@ -7,8 +7,8 @@ const PrivateRoutes = () => {
 
   const loggedInStatus = localStorage.getItem("isLoggedIn");
   const userType = localStorage.getItem("userType");
-  console.log(loggedInStatus);
-  console.log("(",userType,")");
+  // console.log(loggedInStatus);
+  // console.log("(",userType,")");
    return loggedInStatus ? (
      userType === "Owner" ? (
        <UserProfile2 />
