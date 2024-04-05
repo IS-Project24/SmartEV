@@ -27,7 +27,7 @@
 .about-content {
     font-family: 'Oswald', sans-serif;
     text-align: center;
-    margin: 0px 20vh;
+    margin: 0px 15vw;
     padding-top: 2vh;
     /* padding-bottom: 5vh ; */
     /* font-size: 10rem; */
@@ -37,12 +37,8 @@
 }
 
 .image-about {
-    /* display: inline-block; */
-    background-image: url('../../Media/about.jpg');
-    background-size: 100% 100%;
-    background-position: center;
-    height: 70vh;
     width: 70vw;
+    /* height: 60vh; */
     margin: 5vh auto;
     margin-bottom: 10vh;
     margin-top: 7vh;
