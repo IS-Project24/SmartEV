@@ -37,7 +37,6 @@ const FaultHistory = (props) => {
     e.preventDefault();
     try {
       await axios
-        // .post("http://localhost:5000/login", {
         .post("http://10.29.8.31:5000/fault-history/add", {
           vehicleid,
           fault_type_id,
@@ -154,7 +153,7 @@ const FaultHistory = (props) => {
                             htmlFor="discription"
                             className="block mb-2 text-sm font-medium text-gray-900 "
                           >
-                            Discription
+                            Description
                           </label>
                           <input
                             type="text"

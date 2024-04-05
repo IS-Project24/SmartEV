@@ -112,7 +112,7 @@ function App() {
               </>
             }
           />
-          {/* <Route element={<PrivateRoutes isLoggedIn={isLoggedIn} />}> */}
+          <Route element={<PrivateRoutes isLoggedIn={isLoggedIn} />}>
           <Route element={<UserProfile2 />} path="/Owner" exact />
           <Route
             element={
@@ -121,7 +121,7 @@ function App() {
             path="/Manufacturer"
             exact
           />
-          {/* </Route> */}
+          </Route>
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/career" element={<Career />} />
           <Route exact path="/faqs" element={<Faqs />} />

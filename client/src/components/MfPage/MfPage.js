@@ -62,7 +62,10 @@ const MfPage = (props) => {
             />
           </div>
           <div className="mf-page-card-2">
-            <ServiceHistory />
+            <ServiceHistory
+              notifyerror={props.notifyerror}
+              notifysuccess={props.notifysuccess}
+            />
           </div>
         </div>
       </div>
