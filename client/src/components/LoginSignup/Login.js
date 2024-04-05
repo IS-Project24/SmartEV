@@ -29,9 +29,9 @@ const Login = (props) => {
           password,
         })
         .then((res) => {
-          console.log(res.status);
+          // console.log(res.status);
           if (res.status === 200) {
-            console.log("Login successful");
+            // console.log("Login successful");
             props.notifysuccess("Login successful");
 
             localStorage.setItem("authToken", res.data.authToken);
@@ -40,7 +40,7 @@ const Login = (props) => {
 
             props.setOpenModal();
             props.setLogstat();
-            console.log(res.data.userType);
+            // console.log(res.data.userType);
             if (res.data.userType === "Owner") {
               navigate("/Owner"); 
             } else {
