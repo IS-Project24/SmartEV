@@ -128,7 +128,7 @@ const Login = (props) => {
         ></div>
         <div className="modal-content">
           <input type="checkbox" id="login2-chk" aria-hidden="true" />
-          <div className="modal-closer">
+          <div className="modal-closer text-white">
             <p
               onClick={() => {
                 props.setOpenModal();
@@ -141,14 +141,14 @@ const Login = (props) => {
           {loginState && (
             <div className="model-content-form w-full rounded-lg shado md:mt-0 sm:max-w-md xl:p-0">
               <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-                <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                <h1 className="text-xl font-bold leading-tight tracking-tight text-white md:text-2xl dark:text-white">
                   Sign in to your account
                 </h1>
                 <form className="space-y-4 md:space-y-6" action="POST">
                   <div>
                     <label
                       htmlFor="User Id"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      className="block mb-2 text-sm font-medium text-white dark:text-white"
                     >
                       Your User Id
                     </label>
@@ -156,7 +156,7 @@ const Login = (props) => {
                       type="text"
                       name="User Id"
                       id="User Id"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      className="bg-gray-50 border border-gray-300 text-white sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                       placeholder="UID"
                       required=""
                       onChange={(e) => {
@@ -167,7 +167,7 @@ const Login = (props) => {
                   <div>
                     <label
                       htmlFor="Vehicle Id"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      className="block mb-2 text-sm font-medium text-white dark:text-white"
                     >
                       Your Vehicle Id
                     </label>
@@ -175,7 +175,7 @@ const Login = (props) => {
                       type="text"
                       name="Vehicle Id"
                       id="Vehicle Id"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      className="bg-gray-50 border border-gray-300 text-white sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                       placeholder="VID"
                       required=""
                       onChange={(e) => {
@@ -186,7 +186,7 @@ const Login = (props) => {
                   <div>
                     <label
                       htmlFor="password"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      className="block mb-2 text-sm font-medium text-white dark:text-white"
                     >
                       Password
                     </label>
@@ -195,7 +195,7 @@ const Login = (props) => {
                       name="password"
                       id="password"
                       placeholder="••••••••"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      className="bg-gray-50 border border-gray-300 text-white sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                       required=""
                       onChange={(e) => {
                         setPassword(e.target.value);
@@ -237,7 +237,7 @@ const Login = (props) => {
                     Sign in
                   </button>
 
-                  <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                  <p className="text-sm font-light text-gray-400 dark:text-gray-400">
                     Don’t have an account yet?{" "}
                     <a
                       className="go-to-login-state font-medium text-primary-600 hover:underline dark:text-primary-500"
@@ -255,7 +255,7 @@ const Login = (props) => {
           {!loginState && (
             <div className="model-content-form w-full  rounded-lg shadow  md:mt-0 sm:max-w-md xl:p-0">
               <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-                <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                <h1 className="text-xl font-bold leading-tight tracking-tight text-white md:text-2xl dark:text-white">
                   Sign up to your account
                 </h1>
                 <form action="POST">
@@ -263,7 +263,7 @@ const Login = (props) => {
                     <div>
                       <label
                         htmlFor="userid"
-                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        className="block mb-2 text-sm font-medium text-white dark:text-white"
                       >
                         User Id
                       </label>
@@ -271,7 +271,7 @@ const Login = (props) => {
                         type="text"
                         name="userid"
                         id="userid"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                         placeholder="UID"
                         onChange={(e) => {
                           setUserid(e.target.value);
@@ -281,7 +281,7 @@ const Login = (props) => {
                     <div>
                       <label
                         htmlFor="vehicleid"
-                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        className="block mb-2 text-sm font-medium text-white dark:text-white"
                       >
                         Vehicle Id
                       </label>
@@ -289,7 +289,7 @@ const Login = (props) => {
                         type="text"
                         name="vehicleid"
                         id="vehicleid"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                         placeholder="VID"
                         onChange={(e) => {
                           setVehicleid(e.target.value);
@@ -299,7 +299,7 @@ const Login = (props) => {
                     <div>
                       <label
                         htmlFor="email"
-                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        className="block mb-2 text-sm font-medium text-white dark:text-white"
                       >
                         Email Id
                       </label>
@@ -307,7 +307,7 @@ const Login = (props) => {
                         type="email"
                         name="email"
                         id="email"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                         placeholder="abc@gmail.com"
                         onChange={(e) => setEmail(e.target.value)}
                       />
@@ -315,13 +315,13 @@ const Login = (props) => {
                     <div>
                       <label
                         htmlFor="category"
-                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        className="block mb-2 text-sm font-medium text-white dark:text-white"
                       >
                         User Type
                       </label>
                       <select
                         id="category"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                         onChange={(e) => setUserType(e.target.value)}
                       >
                         <option value="Owner">Owner</option>
@@ -331,7 +331,7 @@ const Login = (props) => {
                     <div>
                       <label
                         htmlFor="contactnumber"
-                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        className="block mb-2 text-sm font-medium text-white dark:text-white"
                       >
                         Contact Number
                       </label>
@@ -339,7 +339,7 @@ const Login = (props) => {
                         type="tel"
                         name="contactnumber"
                         id="contactnumber"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                         placeholder="Contact Number"
                         onChange={(e) => setContactNumber(e.target.value)}
                       />
@@ -347,7 +347,7 @@ const Login = (props) => {
                     <div>
                       <label
                         htmlFor="address"
-                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        className="block mb-2 text-sm font-medium text-white dark:text-white"
                       >
                         Address
                       </label>
@@ -355,7 +355,7 @@ const Login = (props) => {
                         type="text"
                         name="address"
                         id="address"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                         placeholder="Kharagpur "
                         onChange={(e) => setAddress(e.target.value)}
                       />
@@ -363,7 +363,7 @@ const Login = (props) => {
                     <div>
                       <label
                         htmlFor="password"
-                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        className="block mb-2 text-sm font-medium text-white dark:text-white"
                       >
                         Password
                       </label>
@@ -372,7 +372,7 @@ const Login = (props) => {
                         name="password"
                         id="password"
                         placeholder="••••••••"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border border-gray-300 text-white sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required=""
                         onChange={(e) => {
                           setPassword(e.target.value);
@@ -382,7 +382,7 @@ const Login = (props) => {
                     <div>
                       <label
                         htmlFor="password"
-                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        className="block mb-2 text-sm font-medium text-white dark:text-white"
                       >
                         Re Enter Password
                       </label>
@@ -391,7 +391,7 @@ const Login = (props) => {
                         name="password"
                         id="password2"
                         placeholder="••••••••"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border border-gray-300 text-white sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required=""
                         onChange={(e) => {
                           setPassword(e.target.value);
