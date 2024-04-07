@@ -3,6 +3,9 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import "./Navbar.css";
 import { useNavigate, useLocation } from "react-router-dom";
 
+import IITLogo from "../../Media/image.png";
+// import AicpsLogo from "../../Media/image.png";
+
 function Navbar(props) {
   const location = useLocation();
   const userType = localStorage.getItem("userType");
@@ -58,7 +61,6 @@ function Navbar(props) {
 
   return (
     <>
-
       <div class={`navbar1 ${scrolling ? "solid" : "transparent"}`}>
         <div class="">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-0">
@@ -66,18 +68,13 @@ function Navbar(props) {
               to=""
               class="cursor-pointer flex items-center space-x-3 rtl:space-x-reverse"
             >
-              {/* <img
-              class="h-8"
-              src="./Media/kgp_logo.png"
-              alt="Logo"
-              className="logo"
-            /> */}
+              <img src={IITLogo} alt="Logo" className="logo" />
               {/* <h1 className="navbar-content-heading" onClick={scrollToTop}>
               AI4ICPS
             </h1> */}
-              <span className="footer-main-heading material-symbols-outlined">
+              {/* <span className="footer-main-heading material-symbols-outlined">
                 satellite_alt
-              </span>
+              </span> */}
               <p className="navbar-content-heading" onClick={scrollToTop}>
                 SmartEV
               </p>
