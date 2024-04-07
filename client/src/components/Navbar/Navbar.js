@@ -2,11 +2,17 @@ import React, { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./Navbar.css";
 import { useNavigate, useLocation } from "react-router-dom";
+import { initFlowbite } from "flowbite";
+
+
 
 import IITLogo from "../../Media/image.png";
 // import AicpsLogo from "../../Media/image.png";
 
 function Navbar(props) {
+  useEffect(() => {
+    initFlowbite();
+  }, []);
   const location = useLocation();
   const userType = localStorage.getItem("userType");
   // const location="";
@@ -92,7 +98,10 @@ function Navbar(props) {
                 />
               </svg>
             </button>
-            <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+            <div
+              className="hidden w-full md:block md:w-auto"
+              id="navbar-default"
+            >
               <ul className="cursor-pointer font-medium flex flex-col p-4 md:p-0 mt-4  rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  ">
                 {(!props.isLoggedIn || location.pathname === "/") && (
                   <>

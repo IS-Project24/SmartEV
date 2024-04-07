@@ -32,7 +32,7 @@ function Platformadvantage() {
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
                   Fast, Scalable, elastic by design allowing you to onboard any
-                  number of devices & manage billions of request wihtout any
+                  number of devices & manage billions of request without any
                   error or downtime
                 </p>
               </div>
@@ -48,7 +48,7 @@ function Platformadvantage() {
                   Agnostic and Independent
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Get the freedom to deplot your solution anywhere you prefer
+                  Get the freedom to deploy your solution anywhere you prefer
                   either on premise or in public/private cloud infastructure
                 </p>
               </div>
