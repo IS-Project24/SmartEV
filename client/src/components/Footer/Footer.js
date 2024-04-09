@@ -7,9 +7,11 @@ function Footer() {
     <footer className="footer-main p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
       <div className="mx-auto max-w-screen-xl text-center">
         <div className="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
-          <span className="footer-main-heading material-symbols-outlined">
-            satellite_alt
-          </span>
+          <a href="https://smartev.my.canva.site/">
+            <span className="footer-main-heading material-symbols-outlined">
+              satellite_alt
+            </span>
+          </a>
           <p className="footer-main-heading-1">SmartEV</p>
         </div>
         <p className="my-6 text-gray-500 dark:text-gray-400">
