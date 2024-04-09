@@ -6,7 +6,7 @@ const MfCarImg = () => {
   return (
     <div className="mf-car-image-box">
       <div className="mf-car-image-box-overlay-text">
-        <h6>User</h6>
+        <h6 className="car-image-box-heading">User</h6>
         {/* <h6>Hello User</h6> */}
         <img src={carimg} />
       </div>

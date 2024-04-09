@@ -6,7 +6,7 @@ const CarImage = () => {
   return (
     <div className="car-image-box">
       <div className="car-image-box-overlay-text">
-        <h6>Hello User</h6>
+        <h6 className="car-image-box-heading">Hello User</h6>
         {/* <h6>Hello User</h6> */}
         <img src={carimg} />
       </div>
