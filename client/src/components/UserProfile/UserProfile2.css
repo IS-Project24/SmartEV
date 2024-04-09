@@ -13,7 +13,6 @@
     font-family: 'Rubik', sans-serif;
 }
 
-
 .user-profile-2-card-1 {
     background-image: linear-gradient(to right top, #e3e1d9, #e6e4db, #e8e6dd, #ebe9e0, #eeebe2, #ebebe2, #e8ece3, #e5ece4, #dde9e5, #d9e4e6, #d8dfe4, #d8dae0);
     border-radius: 16px;
@@ -32,21 +31,13 @@
     align-items: center;
 }
 
-.box4 .cr-graph{
-    width: 100%;
-    height: 100%;
-}
+.add-display-card{
+    display: none;
 
-.box4 .fr-graph{
-    width: 100%;
-    height: 100%;
 }
 @media screen and (max-width:768px){
     .user-profile-2 {
-        display: grid;
         grid-template-columns: 1fr;  /* One column for 1x4 layout */
-        grid-template-rows: repeat(4, 1fr);
-        grid-auto-rows: auto;
     }
 }
 
@@ -63,14 +54,3 @@
     }
     
 }
-
-@media screen and (max-width: 1440px) {
-    .user-profile-2 {
-        display: grid;
-        grid-template-columns: 1fr;  /* One column for 1x4 layout */
-        grid-template-rows: repeat(4, 1fr);
-
-    }
-}
-
-
