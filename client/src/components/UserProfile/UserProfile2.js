@@ -71,7 +71,7 @@ const UserProfile2 = (props) => {
                   : "Great news: No faults have been detected in the electric vehicle system! Your vehicle is operating smoothly and efficiently. Remember to continue regular maintenance checks to keep it in top condition."}
               </h5>
             </div>
-            <div className="mf-page-box-4">
+            <div className="box-4">
               <div className="mf-page-card-2">
                 <FaultHistory />
               </div>

@@ -46,7 +46,7 @@ const FaultHistory = () => {
       <div
         className="overflow-y-scroll"
         style={{
-          height: "520px",
+          height: "400px",
           borderRadius: "1rem",
           scrollbarWidth: "none",
         }}

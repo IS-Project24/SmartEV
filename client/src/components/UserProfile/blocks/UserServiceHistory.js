@@ -46,7 +46,7 @@ function ServiceHistory() {
       <div
         className="overflow-y-auto"
         style={{
-          height: "520px",
+          height: "400px",
           borderRadius: "1rem",
           scrollbarWidth: "none",
         }}
