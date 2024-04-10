@@ -2,6 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 2s;
+}
+.evhealth:hover
+{
+    transform: scale(1.2);
 }
 
 .ev_card{
