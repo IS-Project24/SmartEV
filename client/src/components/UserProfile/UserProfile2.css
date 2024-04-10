@@ -71,3 +71,12 @@
         transform: translate(-100%, 0);
     }
 } */
+
+.alert-message-container-1
+{
+    background-color: rgba(172, 255, 47, 0.2);
+}
+.alert-message-container-2
+{
+    background-color: rgba(255, 0, 0, 0.2);
+}

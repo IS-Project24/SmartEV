@@ -30,6 +30,8 @@ const UserProfile2 = (props) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const [faultDetected, setFaultDetected] = useState(true);
+
   return (
     <>
       <div className="user-profile-2">
@@ -53,16 +55,20 @@ const UserProfile2 = (props) => {
           </div>
         </div> */}
           <div className="mf-page-box-4-container">
-            <div className="block max-w-full p-3 bg-white border border-gray-200 rounded-2xl shadow mb-4">
+            <div
+              className={`alert-message-container ${
+                faultDetected
+                  ? "alert-message-container-2"
+                  : "alert-message-container-1"
+              } block max-w-full p-3 border border-gray-200 rounded-2xl shadow mb-4`}
+            >
               <h5
                 className="alert-message font-bold tracking-tight text-gray-900"
                 style={{ fontSize: "2vh" }}
               >
-                {/* {name} */}
-                Great news: No faults have been detected in the electric vehicle
-                system! Your vehicle is operating smoothly and efficiently.
-                Remember to continue regular maintenance checks to keep it in
-                top condition.
+                {faultDetected
+                  ? "Attention: A fault has been detected in the electric vehicle system. Please proceed with caution and consider scheduling maintenance as soon as possible to ensure optimal performance and safety."
+                  : "Great news: No faults have been detected in the electric vehicle system! Your vehicle is operating smoothly and efficiently. Remember to continue regular maintenance checks to keep it in top condition."}
               </h5>
             </div>
             <div className="mf-page-box-4">
