@@ -30,7 +30,7 @@ const UserProfile2 = (props) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const [faultDetected, setFaultDetected] = useState(true);
+  const [faultDetected, setFaultDetected] = useState(false);
 
   return (
     <>
