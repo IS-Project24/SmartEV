@@ -62,7 +62,7 @@
     animation: marquee 5s linear infinite;
 }
 
-@keyframes marquee {
+/* @keyframes marquee {
     0% {
         transform: translate(0, 0);
     }
@@ -70,4 +70,4 @@
     100% {
         transform: translate(-100%, 0);
     }
-}
+} */
