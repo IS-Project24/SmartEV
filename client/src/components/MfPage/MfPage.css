@@ -67,7 +67,8 @@
 @media screen and (max-width:768px) {
     .mf-page{
        padding: 0;
-       margin: 0;
+       margin-inline: 1rem;
+       margin-top: 5rem;
 
     }
     .mf-page .mf-page-card-1{

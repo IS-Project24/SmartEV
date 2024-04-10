@@ -22,12 +22,9 @@ const GraphCurrent = () => {
           throw new Error(`Error fetching data: ${response.status}`);
         }
         const jsonData = await response.json();
-        // console.log('response:', jsonData);
-        setData(jsonData); // Update state with fetched data
-        // console.log("Fetched data:", jsonData);
+        setData(jsonData.reverse()); 
       } catch (error) {
         console.error("Error fetching data:", error);
-        // console.log('couldnt fetch data:');
       }
     };
 
