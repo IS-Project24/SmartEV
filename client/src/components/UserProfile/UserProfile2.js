@@ -1,8 +1,8 @@
 import {React, useState, useEffect} from "react";
 import "./UserProfile2.css";
 import Box3 from "./blocks/Box3";
-import FaultHistory from "../MfPage/blocks/FaultHistory";
-import ServiceHistory from "../MfPage/blocks/ServiceHistory";
+import FaultHistory from "./blocks/UserFaultHistory";
+import ServiceHistory from "./blocks/UserServiceHistory";
 import CarImage from "./blocks/CarImage";
 import DashboardMap from "./blocks/DashboardMap";
 
@@ -53,16 +53,10 @@ const UserProfile2 = (props) => {
         </div> */}
         <div className="mf-page-box-4">
           <div className="mf-page-card-2">
-            <FaultHistory
-              notifyerror={props.notifyerror}
-              notifysuccess={props.notifysuccess}
-            />
+            <FaultHistory/>
           </div>
           <div className="mf-page-card-2">
-            <ServiceHistory
-              notifyerror={props.notifyerror}
-              notifysuccess={props.notifysuccess}
-            />
+            <ServiceHistory/>
           </div>
         </div>
       </div>
